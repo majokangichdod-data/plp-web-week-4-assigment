@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">S</span>
+                <h2>SpendWise</h2>
+            </div>
+
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="#overview" class="nav-item active">⌂ Overview</a>
+                <a href="#income" class="nav-item">↗ Income</a>
+                <a href="#expenses" class="nav-item">↘ Expenses</a>
+                <a href="#savings" class="nav-item">◈ Savings</a>
+                <a href="#reports" class="nav-item">▤ Reports</a>
+                <a href="#settings" class="nav-item">⚙ Settings</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Personal Finance</p>
+                <small>Your money, organized.</small>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="overview">
+
+            <!-- Header -->
+            <header class="header">
+                <div class="header-title">
+                    <p class="eyebrow">FINANCIAL OVERVIEW</p>
+                    <h1>My Dashboard</h1>
+                    <p class="subtitle">Welcome back! Here's your monthly summary.</p>
+                </div>
+
+                <div class="profile">
+                    <div class="avatar">A</div>
+                    <div>
+                        <strong>Alex Morgan</strong>
+                        <small>Personal Account</small>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Financial Summary -->
+            <section class="summary-section" aria-label="Monthly summary">
+                <article class="summary-card balance-card" tabindex="0">
+                    <div class="summary-top">
+                        <span>Total Balance</span>
+                        <span class="summary-icon">◈</span>
+                    </div>
+                    <h2>KSh 85,450</h2>
+                    <p>Available funds this month</p>
+                </article>
+
+                <article class="summary-card" tabindex="0">
+                    <div class="summary-top">
+                        <span>Total Income</span>
+                        <span class="summary-icon">↗</span>
+                    </div>
+                    <h2>KSh 120,000</h2>
+                    <p class="positive">↑ 8.2% from last month</p>
+                </article>
+
+                <article class="summary-card" tabindex="0">
+                    <div class="summary-top">
+                        <span>Total Expenses</span>
+                        <span class="summary-icon">↘</span>
+                    </div>
+                    <h2>KSh 34,550</h2>
+                    <p class="negative">↓ 3.5% from last month</p>
+                </article>
+            </section>
+
+            <!-- Category Cards -->
+            <section class="categories-section" id="expenses">
+                <div class="section-heading">
+                    <div>
+                        <h2>Spending Categories</h2>
+                        <p>See where your money goes.</p>
+                    </div>
+                    <span class="month-label">October 2026</span>
+                </div>
+
+                <div class="category-grid">
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="category-icon food">🍽</span>
+                            <span class="percentage">28%</span>
+                        </div>
+                        <h3>Food</h3>
+                        <p class="amount">KSh 9,670</p>
+                        <p class="card-description">Groceries and meals</p>
+                        <div class="progress-bar">
+                            <span class="progress food-progress"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="category-icon transport">🚌</span>
+                            <span class="percentage">12%</span>
+                        </div>
+                        <h3>Transport</h3>
+                        <p class="amount">KSh 4,150</p>
+                        <p class="card-description">Travel and commuting</p>
+                        <div class="progress-bar">
+                            <span class="progress transport-progress"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="category-icon rent">🏠</span>
+                            <span class="percentage">30%</span>
+                        </div>
+                        <h3>Rent</h3>
+                        <p class="amount">KSh 10,365</p>
+                        <p class="card-description">Housing and rent</p>
+                        <div class="progress-bar">
+                            <span class="progress rent-progress"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="category-icon entertainment">🎬</span>
+                            <span class="percentage">8%</span>
+                        </div>
+                        <h3>Entertainment</h3>
+                        <p class="amount">KSh 2,760</p>
+                        <p class="card-description">Leisure and activities</p>
+                        <div class="progress-bar">
+                            <span class="progress entertainment-progress"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" id="savings" tabindex="0">
+                        <div class="card-top">
+                            <span class="category-icon savings">💰</span>
+                            <span class="percentage">15%</span>
+                        </div>
+                        <h3>Savings</h3>
+                        <p class="amount">KSh 5,183</p>
+                        <p class="card-description">Future financial goals</p>
+                        <div class="progress-bar">
+                            <span class="progress savings-progress"></span>
+                        </div>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <span class="category-icon utilities">💡</span>
+                            <span class="percentage">7%</span>
+                        </div>
+                        <h3>Utilities</h3>
+                        <p class="amount">KSh 2,422</p>
+                        <p class="card-description">Water, electricity and internet</p>
+                        <div class="progress-bar">
+                            <span class="progress utilities-progress"></span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Recent Transactions -->
+            <section class="transactions-section" id="reports">
+                <div class="section-heading">
+                    <div>
+                        <h2>Recent Transactions</h2>
+                        <p>A quick look at recent spending.</p>
+                    </div>
+                </div>
+
+                <div class="transaction-list">
+                    <div class="transaction-row">
+                        <span class="transaction-icon food">🍽</span>
+                        <div class="transaction-info">
+                            <strong>Supermarket</strong>
+                            <small>Food · Oct 27, 2026</small>
+                        </div>
+                        <strong class="transaction-amount">- KSh 1,500</strong>
+                    </div>
+
+                    <div class="transaction-row">
+                        <span class="transaction-icon transport">🚌</span>
+                        <div class="transaction-info">
+                            <strong>Daily Commute</strong>
+                            <small>Transport · Oct 26, 2026</small>
+                        </div>
+                        <strong class="transaction-amount">- KSh 350</strong>
+                    </div>
+
+                    <div class="transaction-row">
+                        <span class="transaction-icon savings">💰</span>
+                        <div class="transaction-info">
+                            <strong>Monthly Savings</strong>
+                            <small>Savings · Oct 25, 2026</small>
+                        </div>
+                        <strong class="transaction-amount income-amount">+ KSh 2,000</strong>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>© 2026 SpendWise · Smart money management</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
